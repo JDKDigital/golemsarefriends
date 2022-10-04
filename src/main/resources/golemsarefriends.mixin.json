@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "package": "cy.jdkdigital.golemsarefriends.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+        "MixinVillagerGoalPackages",
+        "MixinVillager"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "refmap": "golemsarefriends.refmap.json",
+    "minVersion": "0.8.5"
+}
