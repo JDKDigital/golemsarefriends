@@ -1,10 +1,10 @@
 modLoader="javafml" #mandatory
-loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 license="All rights reserved"
 [[mods]] #mandatory
     modId="golemsarefriends" #mandatory
     version="${file.jarVersion}" #mandatory
-    displayName="Golems Are Friends Not Resources" #mandatory
+    displayName="Golems Are Friends Not Fodder" #mandatory
     credits="me" #optional
     authors="LobsterJonn" #optional
     description='''
@@ -13,12 +13,12 @@ This mod makes Armorer, Toolsmith and Weaponsmith villagers attempt to repair da
 [[dependencies.golemsarefriends]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[40,)" #mandatory
+    versionRange="[43,)" #mandatory
     ordering="NONE"
     side="BOTH"
 [[dependencies.golemsarefriends]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.19.2,1.20)"
     ordering="NONE"
     side="BOTH"

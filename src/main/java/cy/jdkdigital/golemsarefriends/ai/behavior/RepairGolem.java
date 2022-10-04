@@ -10,7 +10,6 @@ import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
 import net.minecraft.world.entity.ai.memory.MemoryStatus;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.npc.Villager;
-import net.minecraft.world.level.gameevent.GameEvent;
 
 public class RepairGolem extends Behavior<Villager>
 {
@@ -42,7 +41,6 @@ public class RepairGolem extends Behavior<Villager>
             if (golem.getHealth() != f) {
                 float f1 = 1.0F + (level.random.nextFloat() - level.random.nextFloat()) * 0.2F;
                 golem.playSound(SoundEvents.IRON_GOLEM_REPAIR, 1.0F, f1);
-                golem.gameEvent(GameEvent.MOB_INTERACT, golem.eyeBlockPosition());
             }
 
             if (golem.getHealth() == golem.getMaxHealth()) {

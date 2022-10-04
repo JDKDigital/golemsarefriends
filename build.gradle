@@ -28,7 +28,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.19.2'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
 
@@ -141,7 +141,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${forgeversion}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    implementation fg.deobf("curse.maven:everythingcopper-579545:3908966")
+    implementation fg.deobf("curse.maven:everythingcopper-579545:4017939")
 }
 
 mixin {
@@ -152,7 +152,7 @@ mixin {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "Golems Are Friends Not Resources",
+                "Specification-Title"     : "Golems Are Friends Not Fodder",
                 "Specification-Vendor"    : "golemsarefriends",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
