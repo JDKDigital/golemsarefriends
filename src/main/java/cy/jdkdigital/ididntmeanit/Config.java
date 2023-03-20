@@ -1,4 +1,4 @@
-package cy.jdkdigital.golemsarefriends;
+package cy.jdkdigital.ididntmeanit;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
@@ -13,8 +13,14 @@ public class Config {
 
     public static class Common
     {
+        public final ForgeConfigSpec.BooleanValue onlyEmptyHands;
+
         public Common(ForgeConfigSpec.Builder builder) {
             builder.push("Common");
+
+            onlyEmptyHands = builder
+                    .comment("Set to true if only empty hands should be ignored. If set to false, only tools and weapons can damage villagers.")
+                    .define("onlyEmptyHands", true);
 
             builder.pop();
         }
