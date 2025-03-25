@@ -1,6 +1,5 @@
 package cy.jdkdigital.golemsarefriends.ai.sensing;
 
-import com.google.common.collect.ImmutableSet;
 import cy.jdkdigital.golemsarefriends.GolemsAreFriends;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,7 +26,7 @@ public class DamagedGolemSensor extends Sensor<LivingEntity>
     }
 
     public Set<MemoryModuleType<?>> requires() {
-        return ImmutableSet.of(MemoryModuleType.NEAREST_LIVING_ENTITIES);
+        return Set.of(MemoryModuleType.NEAREST_LIVING_ENTITIES);
     }
 
     public static void checkForNearbyGolem(LivingEntity villager) {

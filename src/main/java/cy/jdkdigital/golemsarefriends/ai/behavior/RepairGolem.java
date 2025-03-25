@@ -1,6 +1,5 @@
 package cy.jdkdigital.golemsarefriends.ai.behavior;
 
-import com.google.common.collect.ImmutableMap;
 import cy.jdkdigital.golemsarefriends.GolemsAreFriends;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -11,10 +10,12 @@ import net.minecraft.world.entity.ai.memory.MemoryStatus;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.npc.Villager;
 
+import java.util.Map;
+
 public class RepairGolem extends Behavior<Villager>
 {
     public RepairGolem() {
-        super(ImmutableMap.of(GolemsAreFriends.NEAREST_GOLEM.get(), MemoryStatus.VALUE_PRESENT));
+        super(Map.of(GolemsAreFriends.NEAREST_GOLEM.get(), MemoryStatus.VALUE_PRESENT));
     }
 
     protected boolean checkExtraStartConditions(ServerLevel level, Villager villager) {

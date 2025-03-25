@@ -38,6 +38,5 @@ public class GolemsAreFriends
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MEMORY_MODULES.register(modEventBus);
         SENSOR_TYPES.register(modEventBus);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.CONFIG);
     }
 }
